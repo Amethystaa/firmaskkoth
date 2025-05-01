@@ -1,4 +1,4 @@
-.izanami-box {
+.gio-box {
   width: 400px;
   height: 200px;
   border: 3px solid #222;
@@ -10,7 +10,7 @@
   background-image: var(--image);
 }
 
-.izaicon {
+.gioicon {
     color:transparent;
   text-align: right; 
   font:100px 'Playfair Display', serif; 
@@ -19,7 +19,7 @@
   margin-top:10px; 
   margin-left:10px; 
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #000000;
+  -webkit-text-stroke-color: #ffffff;
   opacity:0.5;
   transform: rotate(0deg);
  position: absolute;
@@ -28,7 +28,7 @@
   transform: translateY(-50%);
   }
   
-.izanami-text {
+.gio-text {
   position: absolute;
   right: 20px;
   top: 50%;
@@ -43,8 +43,8 @@
   text-align: left;
 }
 
-.izanami-text span {
+.gio-text span {
   font-family: 'WindSong', cursive;
-  font-size: 15px;
-  color: #a1273e;
+  font-size: 30px;
+  color: ##966B39;
 }
