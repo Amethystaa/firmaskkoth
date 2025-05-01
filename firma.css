@@ -10,6 +10,21 @@
   background-image: var(--image);
 }
 
+.izaicon {
+  color:transparent;
+  text-align:left; 
+  font:200px 'Playfair Display', serif; 
+  letter-spacing:2px; 
+  line-height:10px; 
+  margin-top:-10px; 
+  margin-left:-20px; 
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #675431;
+  opacity:0.4;
+  transform: rotate(20deg);
+  position:absolute;
+  }
+  
 .izanami-text {
   position: absolute;
   right: 20px;
