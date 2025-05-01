@@ -1,4 +1,4 @@
-.izanami-box {
+.izanamibox {
   width: 400px;
   height: 200px;
   border: 1px solid #222;
@@ -10,7 +10,7 @@
   background-image: var(--image);
 }
 
-.izanami-text {
+.izanamitext {
   position: absolute;
   right: 20px;
   top: 50%;
@@ -25,7 +25,7 @@
   text-align: left;
 }
 
-.izanami-text span {
+.izanamitext span {
   font-family: 'WindSong', cursive;
   font-size: 15px;
   color: #a1273e;
