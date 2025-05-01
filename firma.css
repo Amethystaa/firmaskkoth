@@ -1,4 +1,4 @@
-izanami-box {
+.izanami-box {
   width: 400px;
   height: 200px;
   border: 1px solid #222;
@@ -6,20 +6,27 @@ izanami-box {
   background-position: center;
   position: relative;
   overflow: hidden;
-  --image: url('default.jpg'); 
+  --image: url('default.jpg'); /* Imagen por defecto */
   background-image: var(--image);
 }
+
 .izanami-text {
-  font-family: "Times New Roman", serif;
-  color: #fff;
-  font-size: 14px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 160px;
+  padding-left: 10px;
+  border-left: 2px solid rgba(255,255,255,0.2);
+  color: #e3e3e3;
+  font-family: 'Times New Roman', serif;
+  font-size: 13px;
   line-height: 1.2;
-  text-align: center;
-  background: transparent;
-  padding: 0 10px;
+  text-align: left;
 }
 
 .izanami-text span {
   font-family: 'WindSong', cursive;
-  font-size: 18px;
+  font-size: 15px;
+  color: #a1273e;
 }
