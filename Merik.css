@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
 
 .firma-container {
   width: 100%;
@@ -58,27 +58,33 @@
   font-size: 2rem;
   color: white;
   text-shadow: 2px 2px 6px black;
+  flex-direction: column;
   gap: 10px;
 }
 
-/* Texto con la fuente específica */
-.izanami-text {
-  font-family: 'WindSong', cursive;
-  padding: 0.2em 0.6em;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-}
-
-/* Ícono: tamaño fijo y fuente predeterminada (sin interferir con la fuente del texto) */
+/* Ícono centrado en la parte superior */
 .icon-wrapper {
   font-family: inherit; /* Para que el ícono use la fuente por defecto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* Espaciado entre ícono y texto */
 }
 
+/* Ícono: tamaño fijo */
 .icon-hover {
-  font-size: 50px;  /* Tamaño fijo */
+  font-size: 20px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   color: white;
+}
+
+/* Texto con la nueva fuente Cinzel */
+.izanami-text {
+  font-family: 'Cinzel', serif; /* Cambiado a Cinzel */
+  padding: 0.4em 0.6em;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 /* Hover effects */
