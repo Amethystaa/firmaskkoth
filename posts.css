@@ -2,7 +2,7 @@
 
 .althea-post {
   width: 500px;
-  padding: 30px;
+  padding: 20px;
   margin: auto;
   font-family: 'EB Garamond', serif;
   background-color: transparent;
@@ -12,7 +12,7 @@
   font-family: 'Ruthie', cursive;
   font-size: 42px;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   color: var(--groups);
 }
 
@@ -21,14 +21,14 @@
   max-width: 420px;
   height: 1px;
   background-color: var(--groups);
-  margin: 0 auto 12px auto;
+  margin: 0 auto 8px auto;
   opacity: 0.3;
 }
 
 .althea-name {
   font-size: 14px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .althea-frase {
@@ -36,43 +36,42 @@
   font-style: italic;
   font-size: 15px;
   opacity: 0.7;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .althea-icon {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .althea-icon i {
-  font-size: 24px;
+  font-size: 70px;
   color: var(--groups);
   opacity: 0.8;
 }
 
 .althea-div {
   width: 2px;
-  height: 20px;
+  height: 16px;
   background-color: var(--groups);
-  margin: 8px auto;
+  margin: 6px auto;
   opacity: 0.3;
 }
 
 .althea-txt {
   font-size: 16px;
   text-align: justify;
-  line-height: 1.7;
+  line-height: 1.6;
   position: relative;
 }
 
 .althea-init {
   float: left;
   font-family: 'Ruthie', cursive;
-  font-size: 65px;
+  font-size: 60px;
   line-height: 1;
-  padding-right: 40px;
-  padding-top: 5px;
+  padding-right: 6px;
+  padding-top: 4px;
   display: block;
   color: var(--groups);
 }
-
