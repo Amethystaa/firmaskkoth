@@ -10,7 +10,7 @@
 
 .althea-tit {
   font-family: 'Ruthie', cursive;
-  font-size: 42px;
+  font-size: 50px;
   text-align: center;
   color: var(--groups);
   margin-bottom: 4px;
@@ -46,7 +46,7 @@
 }
 
 .althea-icon i {
-  font-size: 70px;
+  font-size: 50px;
   color: var(--groups);
   opacity: 0.8;
   display: inline-block;
@@ -54,7 +54,7 @@
 
 .althea-div {
   width: 2px;
-  height: 12px;
+  height: 20px;
   background-color: var(--groups);
   margin: 4px auto;
   opacity: 0.3;
@@ -72,7 +72,7 @@
   font-family: 'Ruthie', cursive;
   font-size: 58px;
   line-height: 1;
-  padding-right: 8px;
+  padding-right: 35px;
   padding-top: 2px;
   display: block;
   color: var(--groups);
