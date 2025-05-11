@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Ruthie&display=swap');
 
 .althea-post {
-  width: 500px;
+  width: 440px;
   margin: auto;
   font-family: 'EB Garamond', serif;
   background-color: transparent;
@@ -18,7 +18,7 @@
 
 .althea-line {
   width: 80%;
-  max-width: 420px;
+  max-width: 400px;
   height: 1px;
   background-color: var(--groups);
   margin: 0 auto 6px auto;
