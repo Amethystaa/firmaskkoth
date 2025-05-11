@@ -14,6 +14,7 @@
   text-align: center;
   color: var(--groups);
   margin-bottom: 4px;
+  padding-top: 20px;
 }
 
 .althea-line {
@@ -56,12 +57,12 @@
   width: 2px;
   height: 20px;
   background-color: var(--groups);
-  margin: 4px auto;
+  margin: 2px auto;
   opacity: 0.3;
 }
 
 .althea-txt {
-  font-size: 16px;
+  font-size: 17.5px;
   text-align: justify;
   line-height: 1.6;
   margin-top: 16px;
@@ -73,7 +74,8 @@
   font-size: 58px;
   line-height: 1;
   padding-right: 35px;
-  padding-top: 2px;
+  padding-top: 5px;
+  padding-left: 5px;
   display: block;
   color: var(--groups);
 }
