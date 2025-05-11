@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Ruthie&display=swap');
+
+.althea-post {
+  width: 500px;
+  padding: 30px;
+  margin: auto;
+  font-family: 'EB Garamond', serif;
+  background-color: transparent;
+}
+
+.althea-tit {
+  font-family: 'Ruthie', cursive;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 8px;
+  color: var(--groups);
+}
+
+.althea-line {
+  width: 80%;
+  max-width: 420px;
+  height: 1px;
+  background-color: var(--groups);
+  margin: 0 auto 12px auto;
+  opacity: 0.3;
+}
+
+.althea-name {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.althea-frase {
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.althea-icon {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.althea-icon i {
+  font-size: 24px;
+  color: var(--groups);
+  opacity: 0.8;
+}
+
+.althea-div {
+  width: 2px;
+  height: 20px;
+  background-color: var(--groups);
+  margin: 8px auto;
+  opacity: 0.3;
+}
+
+.althea-txt {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.7;
+  position: relative;
+}
+
+.althea-init {
+  float: left;
+  font-family: 'Ruthie', cursive;
+  font-size: 65px;
+  line-height: 1;
+  padding-right: 40px;
+  padding-top: 5px;
+  display: block;
+  color: var(--groups);
+}
+
