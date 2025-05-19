@@ -24,6 +24,7 @@
 }
 
 .firma-asuna .texto {
+  font-family: 'Merriweather', serif;
   position: absolute;
   inset: auto 10px 10px auto;
   bottom: 10px;
