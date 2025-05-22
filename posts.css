@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Ruthie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Homemade+Apple&family=Nothing+You+Could+Do&display=swap');
+
+
 
 .althea-post {
   width: 440px;
@@ -80,7 +83,7 @@
   color: var(--groups);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Homemade+Apple&family=Nothing+You+Could+Do&display=swap');
+
 
 .asuna-post {
   width: 500px;
