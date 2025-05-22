@@ -79,3 +79,93 @@
   display: block;
   color: var(--groups);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Homemade+Apple&family=Nothing+You+Could+Do&display=swap');
+
+.asuna-post {
+  width: 500px;
+  margin: auto;
+  font-family: 'EB Garamond', serif;
+  background-color: transparent;
+  padding: 0;
+}
+
+.asuna-tit {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 4px;
+  padding-top: 10px;
+  background: linear-gradient(to right, var(--groups), rgba(var(--groups-rgb), 0.2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.asuna-line {
+  width: 80%;
+  max-width: 420px;
+  height: 1px;
+  background-color: var(--groups);
+  margin: 0 auto 6px auto;
+  opacity: 0.3;
+}
+
+.asuna-name {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.asuna-frase {
+  text-align: center;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 16px;
+  margin-bottom: 6px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.asuna-icon {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.asuna-icon i {
+  font-size: 70px;
+  color: var(--groups);
+  opacity: 0.8;
+  display: inline-block;
+}
+
+.asuna-div {
+  width: 2px;
+  height: 12px;
+  background-color: var(--groups);
+  margin: 4px auto;
+  opacity: 0.3;
+}
+
+.asuna-txt {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.6;
+  margin-top: 16px;
+}
+
+.asuna-init {
+  float: left;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 58px;
+  line-height: 1;
+  padding-right: 8px;
+  padding-top: 4px;
+  margin-left: 2px;
+  display: block;
+  background: linear-gradient(to right, var(--groups), rgba(var(--groups-rgb), 0.2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
