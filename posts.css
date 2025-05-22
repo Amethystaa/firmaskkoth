@@ -106,8 +106,7 @@
   background-clip: text;
   color: transparent;
   line-height: 1.2;
-  overflow: visible;          
-  display: inline-block;     
+  overflow: visible;    
 }
 
 .asuna-line {
@@ -176,6 +175,5 @@
   background-clip: text;
   color: transparent;
   line-height: 1.2;
-  overflow: visible;          
-  display: inline-block;     
+  overflow: visible;       
 }
