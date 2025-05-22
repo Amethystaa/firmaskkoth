@@ -158,6 +158,9 @@
   text-align: justify;
   line-height: 1.6;
   margin-top: 16px;
+  overflow: visible;        
+  position: relative;
+  padding-top: 10px;         
 }
 
 .asuna-init {
