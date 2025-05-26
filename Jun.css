@@ -6,6 +6,7 @@
   overflow: hidden;
 }
 
+/* Ambas imágenes tienen layout compartido */
 .imagen {
   position: relative;
   width: 200px;
@@ -13,47 +14,58 @@
   overflow: hidden;
 }
 
-.imagen img {
+/* Imagen izquierda (sin filtro) */
+.imagen.izquierda img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: filter 0.3s ease;
   display: block;
 }
 
-.imagen:hover img {
-  filter: grayscale(100%) sepia(90%) brightness(0.7) contrast(1.1) hue-rotate(-10deg) saturate(0.6);
-  transition: filter 0.4s ease-in-out;
-}
-
+/* Imagen derecha: empieza con filtro monocromático */
 .imagen.derecha img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
   filter: grayscale(100%) sepia(90%) brightness(0.7) contrast(1.1) hue-rotate(-10deg) saturate(0.6);
   transition: filter 0.4s ease-in-out;
 }
 
+/* Al hacer hover, se quita el filtro */
 .imagen.derecha:hover img {
   filter: none;
 }
 
+/* Ícono tipo trazo en imagen izquierda */
 .icono-borde {
   position: absolute;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  border: 2px solid white;
-  border-radius: 50%;
   width: 40px;
   height: 40px;
-  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   pointer-events: none;
+  z-index: 2;
 }
 
+.icono-borde i {
+  font-size: 32px;
+  color: white;
+  background: none;
+  border: none;
+  padding: 0;
+  line-height: 1;
+}
+
+/* Cuadro blanco con borde recortado y texto */
 .cuadro-texto {
   position: absolute;
-  top: 25px;
+  bottom: 25px;
   left: 25px;
-  width: 150px;
-  height: 150px;
   background: white;
   mix-blend-mode: lighten;
   display: flex;
@@ -66,13 +78,18 @@
   transition: opacity 0.4s ease-in-out;
   z-index: 2;
   opacity: 1;
+  width: auto;
+  height: auto;
+  max-width: 150px;
+  max-height: 150px;
 }
 
-/* Al hacer hover, el cuadro desaparece visualmente */
+/* Cuadro desaparece suavemente al hacer hover */
 .imagen.derecha:hover .cuadro-texto {
   opacity: 0;
 }
 
+/* Borde interior con efecto recorte */
 .cuadro-texto::before {
   content: '';
   position: absolute;
@@ -95,13 +112,18 @@
   z-index: 3;
 }
 
+/* Texto recortado que deja ver fondo */
 .cuadro-texto p {
-  font-size: 14px;
-  font-weight: bold;
-  color: transparent;
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  font-weight: 700;
   background: black;
   -webkit-background-clip: text;
   background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
   position: relative;
   z-index: 4;
 }
+
