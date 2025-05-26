@@ -1,0 +1,107 @@
+.firma {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  gap: 1.5px;
+  overflow: hidden;
+}
+
+.imagen {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+  display: block;
+}
+
+.imagen:hover img {
+  filter: grayscale(100%) sepia(90%) brightness(0.7) contrast(1.1) hue-rotate(-10deg) saturate(0.6);
+  transition: filter 0.4s ease-in-out;
+}
+
+.imagen.derecha img {
+  filter: grayscale(100%) sepia(90%) brightness(0.7) contrast(1.1) hue-rotate(-10deg) saturate(0.6);
+  transition: filter 0.4s ease-in-out;
+}
+
+.imagen.derecha:hover img {
+  filter: none;
+}
+
+.icono-borde {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.cuadro-texto {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 150px;
+  height: 150px;
+  background: white;
+  mix-blend-mode: lighten;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: opacity 0.4s ease-in-out;
+  z-index: 2;
+  opacity: 1;
+}
+
+/* Al hacer hover, el cuadro desaparece visualmente */
+.imagen.derecha:hover .cuadro-texto {
+  opacity: 0;
+}
+
+.cuadro-texto::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 2px solid transparent;
+  background: black;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.cuadro-texto p {
+  font-size: 14px;
+  font-weight: bold;
+  color: transparent;
+  background: black;
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+  z-index: 4;
+}
