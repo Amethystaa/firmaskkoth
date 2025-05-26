@@ -118,7 +118,7 @@
 /* Texto con recorte */
 .cuadro-texto p {
   font-family: 'Playfair Display', serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   background: black;
   -webkit-background-clip: text;
