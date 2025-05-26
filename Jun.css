@@ -60,10 +60,10 @@
 .icono-borde i {
   font-size: 40px;
   color: transparent; 
-  -webkit-text-stroke: 1px white; 
-  text-stroke: 1px white; 
+  -webkit-text-stroke: 0.5px white; 
+  text-stroke: 0.5px white; 
   line-height: 1;
-  transform: rotate(-45deg);
+  transform: rotate(-90deg);
   display: inline-block;
 }
 
@@ -80,7 +80,7 @@
   justify-content: center;
   text-align: center;
   pointer-events: none;
-  padding: 10px;
+  padding: 15px;
   box-sizing: border-box;
   transition: opacity 0.4s ease-in-out;
   z-index: 2;
@@ -118,7 +118,7 @@
 /* Texto con recorte */
 .cuadro-texto p {
   font-family: 'Playfair Display', serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   background: black;
   -webkit-background-clip: text;
