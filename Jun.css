@@ -79,7 +79,6 @@
   justify-content: center;
   text-align: center;
   pointer-events: none;
-  padding: 5px; /* Encaja exactamente con borde de 5px */
   box-sizing: border-box;
   transition: opacity 0.4s ease-in-out;
   z-index: 2;
@@ -87,13 +86,14 @@
   width: 140px; /* fijo */
   height: auto;
   max-height: 150px;
+  padding: 0; /* quitamos padding para que el borde funcione */
 }
 
 .imagen.derecha:hover .cuadro-texto {
   opacity: 0;
 }
 
-/* Borde interno con recorte */
+/* Borde interno con recorte visible */
 .cuadro-texto::before {
   content: '';
   position: absolute;
@@ -129,9 +129,8 @@
   color: transparent;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  margin: 0;
+  margin: 5px;
   position: relative;
   z-index: 4;
   word-break: break-word;
-  padding: 0 2px;
 }
