@@ -1,12 +1,12 @@
+/* Estructura principal */
 .firma {
   width: 400px;
-  height: 200px;
+  min-height: 200px;
   display: flex;
   gap: 1.5px;
-  overflow: hidden;
+  overflow: visible;
 }
 
-/* Ambas imágenes tienen layout compartido */
 .imagen {
   position: relative;
   width: 200px;
@@ -14,15 +14,21 @@
   overflow: hidden;
 }
 
-/* Imagen izquierda (sin filtro) */
+/* Imagen izquierda: normal al inicio, filtro al hover */
 .imagen.izquierda img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: filter 0.3s ease-in-out;
+  filter: none;
 }
 
-/* Imagen derecha: empieza con filtro monocromático */
+.imagen.izquierda:hover img {
+  filter: grayscale(100%) sepia(90%) brightness(0.7) contrast(1.1) hue-rotate(-10deg) saturate(0.6);
+}
+
+/* Imagen derecha: con filtro desde el inicio */
 .imagen.derecha img {
   width: 100%;
   height: 100%;
@@ -32,12 +38,11 @@
   transition: filter 0.4s ease-in-out;
 }
 
-/* Al hacer hover, se quita el filtro */
 .imagen.derecha:hover img {
   filter: none;
 }
 
-/* Ícono tipo trazo en imagen izquierda */
+/* Ícono estilo "solo borde" */
 .icono-borde {
   position: absolute;
   bottom: 10px;
@@ -54,18 +59,19 @@
 
 .icono-borde i {
   font-size: 32px;
-  color: white;
-  background: none;
-  border: none;
-  padding: 0;
+  color: transparent; /* Para que solo se vea el contorno */
+  -webkit-text-stroke: 1px white; /* Solo trazo blanco */
+  text-stroke: 1px white; /* soporte general */
   line-height: 1;
+  display: inline-block;
 }
 
-/* Cuadro blanco con borde recortado y texto */
+/* Cuadro blanco adaptable */
 .cuadro-texto {
   position: absolute;
   bottom: 25px;
-  left: 25px;
+  left: 50%;
+  transform: translateX(-50%);
   background: white;
   mix-blend-mode: lighten;
   display: flex;
@@ -78,25 +84,21 @@
   transition: opacity 0.4s ease-in-out;
   z-index: 2;
   opacity: 1;
-  width: auto;
+  width: 150px;
   height: auto;
   max-width: 150px;
   max-height: 150px;
 }
 
-/* Cuadro desaparece suavemente al hacer hover */
 .imagen.derecha:hover .cuadro-texto {
   opacity: 0;
 }
 
-/* Borde interior con efecto recorte */
+/* Borde interno recortado */
 .cuadro-texto::before {
   content: '';
   position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
+  inset: 5px;
   border: 2px solid transparent;
   background: black;
   -webkit-mask:
@@ -112,10 +114,10 @@
   z-index: 3;
 }
 
-/* Texto recortado que deja ver fondo */
+/* Texto con recorte */
 .cuadro-texto p {
   font-family: 'Playfair Display', serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   background: black;
   -webkit-background-clip: text;
