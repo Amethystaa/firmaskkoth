@@ -1,9 +1,10 @@
 .firma-jun {
   width: 400px;
-  min-height: 200px;
+  height: 200px; 
+  overflow: hidden;
   display: flex;
   gap: 1.5px;
-  overflow: visible;
+  position: relative;
 }
 
 .imagen-jun {
@@ -69,7 +70,7 @@
   left: 50%;
   transform: translateX(-50%);
   background: white;
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal !important;
   display: flex;
   align-items: center;
   justify-content: center;
