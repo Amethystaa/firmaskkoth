@@ -58,11 +58,12 @@
 }
 
 .icono-borde i {
-  font-size: 32px;
-  color: transparent; /* Para que solo se vea el contorno */
-  -webkit-text-stroke: 1px white; /* Solo trazo blanco */
-  text-stroke: 1px white; /* soporte general */
+  font-size: 40px;
+  color: transparent; 
+  -webkit-text-stroke: 1px white; 
+  text-stroke: 1px white; 
   line-height: 1;
+  transform: rotate(-45deg);
   display: inline-block;
 }
 
@@ -117,7 +118,7 @@
 /* Texto con recorte */
 .cuadro-texto p {
   font-family: 'Playfair Display', serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   background: black;
   -webkit-background-clip: text;
