@@ -11,10 +11,10 @@
   position: relative;
   width: 200px;
   height: 200px;
-  overflow: hidden;
+  overflow: visible;
 }
 
-/* Imagen izquierda: normal al inicio, filtro al hover */
+/* Imagen izquierda */
 .imagen.izquierda img {
   width: 100%;
   height: 100%;
@@ -28,7 +28,7 @@
   filter: grayscale(100%) sepia(90%) brightness(0.7) contrast(1.1) hue-rotate(-10deg) saturate(0.6);
 }
 
-/* Imagen derecha: con filtro desde el inicio */
+/* Imagen derecha con filtro inicial */
 .imagen.derecha img {
   width: 100%;
   height: 100%;
@@ -42,32 +42,31 @@
   filter: none;
 }
 
-/* Ícono estilo "solo borde" */
+/* Ícono tipo trazo blanco (handheld-fan) */
 .icono-borde {
   position: absolute;
   bottom: 10px;
   left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 40px;
+  transform: translateX(-50%) rotate(-45deg);
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   pointer-events: none;
-  z-index: 2;
+  z-index: 3;
 }
 
 .icono-borde i {
-  font-size: 40px;
-  color: transparent; 
-  -webkit-text-stroke: 0.5px white; 
-  text-stroke: 0.5px white; 
+  font-size: 32px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-stroke: 1px white;
   line-height: 1;
-  transform: rotate(-90deg);
   display: inline-block;
 }
 
-/* Cuadro blanco adaptable */
+/* Cuadro de texto blanco que respeta el borde interno */
 .cuadro-texto {
   position: absolute;
   bottom: 25px;
@@ -80,14 +79,13 @@
   justify-content: center;
   text-align: center;
   pointer-events: none;
-  padding: 15px;
+  padding: 5px; /* Encaja exactamente con borde de 5px */
   box-sizing: border-box;
   transition: opacity 0.4s ease-in-out;
   z-index: 2;
   opacity: 1;
-  width: 150px;
+  width: 140px; /* fijo */
   height: auto;
-  max-width: 150px;
   max-height: 150px;
 }
 
@@ -95,11 +93,14 @@
   opacity: 0;
 }
 
-/* Borde interno recortado */
+/* Borde interno con recorte */
 .cuadro-texto::before {
   content: '';
   position: absolute;
-  inset: 5px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   border: 2px solid transparent;
   background: black;
   -webkit-mask:
@@ -113,12 +114,14 @@
   mask-composite: exclude;
   pointer-events: none;
   z-index: 3;
+  box-sizing: border-box;
+  padding: 5px;
 }
 
-/* Texto con recorte */
+/* Texto recortado con espacio exacto dentro del borde */
 .cuadro-texto p {
   font-family: 'Playfair Display', serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
   background: black;
   -webkit-background-clip: text;
@@ -126,7 +129,9 @@
   color: transparent;
   -webkit-text-fill-color: transparent;
   text-align: center;
+  margin: 0;
   position: relative;
   z-index: 4;
+  word-break: break-word;
+  padding: 0 2px;
 }
-
