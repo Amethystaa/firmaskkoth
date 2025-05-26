@@ -1,10 +1,17 @@
 .firma-jun {
+  position: relative;
   width: 400px;
-  height: 200px; 
-  overflow: hidden;
+  height: 200px;
   display: flex;
   gap: 1.5px;
-  position: relative;
+  overflow: hidden;
+}
+
+.firma-jun * {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: normal !important;
+  box-sizing: border-box;
 }
 
 .imagen-jun {
@@ -13,6 +20,7 @@
   height: 200px;
   overflow: hidden;
 }
+
 
 .imagen-jun.izquierda img {
   width: 100%;
@@ -27,6 +35,7 @@
   filter: grayscale(100%) sepia(90%) brightness(0.7) contrast(1.1) hue-rotate(-10deg) saturate(0.6);
 }
 
+
 .imagen-jun.derecha img {
   width: 100%;
   height: 100%;
@@ -39,6 +48,7 @@
 .imagen-jun.derecha:hover img {
   filter: none;
 }
+
 
 .icono-borde-jun {
   position: absolute;
@@ -64,13 +74,14 @@
   display: inline-block;
 }
 
+
 .cuadro-texto-jun {
   position: absolute;
   bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
   background: white;
-  mix-blend-mode: normal !important;
+  mix-blend-mode: lighten;
   display: flex;
   align-items: center;
   justify-content: center;
