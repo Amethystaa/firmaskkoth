@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 .firma-izanami {
   width: 400px;
   height: 200px;
@@ -7,7 +9,6 @@
   font-family: 'Merriweather', serif;
 }
 
-/* Ambas imágenes */
 .firma-izanami .imagen {
   width: 199px;
   height: 200px;
@@ -21,23 +22,23 @@
   display: block;
 }
 
-/* Filtro rojo oscuro para la imagen izquierda */
+
 .firma-izanami .imagen.con-filtro img {
   filter: brightness(0.25) sepia(1) hue-rotate(-45deg) saturate(3.5);
 }
 
+
 .firma-izanami .texto {
   position: absolute;
-  bottom: 10px; /* más cerca del borde inferior */
+  bottom: 6px;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%; /* casi todo el ancho de la imagen */
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 4px 8px; /* menos espacio interno */
-  font-size: 11px;
+  width: 70%;
+  color: rgba(255, 255, 255, 0.65); 
+  border: 1.5px solid rgba(255, 255, 255, 0.3); 
+  padding: 4px 8px;
+  font-size: 8.5px;
   line-height: 1.5;
-  font-family: 'Merriweather', serif;
   background: none;
   z-index: 2;
   display: flex;
@@ -45,4 +46,13 @@
   align-items: center;
   text-align: center;
   pointer-events: none;
+  backdrop-filter: none;
+}
+
+.firma-izanami .icono {
+  font-size: 20px;          
+  opacity: 0.4;             
+  margin-bottom: 6px;
+  display: block;
+  color: rgba(255, 255, 255, 0.85);
 }
