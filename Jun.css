@@ -1,5 +1,4 @@
-/* Estructura principal */
-.firma {
+.firma-jun {
   width: 400px;
   min-height: 200px;
   display: flex;
@@ -7,15 +6,14 @@
   overflow: visible;
 }
 
-.imagen {
+.imagen-jun {
   position: relative;
   width: 200px;
   height: 200px;
-  overflow: visible;
+  overflow: hidden;
 }
 
-/* Imagen izquierda */
-.imagen.izquierda img {
+.imagen-jun.izquierda img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -24,12 +22,11 @@
   filter: none;
 }
 
-.imagen.izquierda:hover img {
+.imagen-jun.izquierda:hover img {
   filter: grayscale(100%) sepia(90%) brightness(0.7) contrast(1.1) hue-rotate(-10deg) saturate(0.6);
 }
 
-/* Imagen derecha con filtro inicial */
-.imagen.derecha img {
+.imagen-jun.derecha img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -38,36 +35,35 @@
   transition: filter 0.4s ease-in-out;
 }
 
-.imagen.derecha:hover img {
+.imagen-jun.derecha:hover img {
   filter: none;
 }
 
-/* Ícono tipo trazo blanco (handheld-fan) */
-.icono-borde {
+.icono-borde-jun {
   position: absolute;
   bottom: 10px;
   left: 50%;
-  transform: translateX(-50%) rotate(-45deg);
-  width: 32px;
-  height: 32px;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   pointer-events: none;
-  z-index: 3;
+  z-index: 2;
 }
 
-.icono-borde i {
-  font-size: 32px;
+.icono-borde-jun i {
+  font-size: 40px;
   color: transparent;
-  -webkit-text-stroke: 1px white;
-  text-stroke: 1px white;
+  -webkit-text-stroke: 0.5px white;
+  text-stroke: 0.5px white;
   line-height: 1;
+  transform: rotate(-90deg);
   display: inline-block;
 }
 
-/* Cuadro de texto blanco que respeta el borde interno */
-.cuadro-texto {
+.cuadro-texto-jun {
   position: absolute;
   bottom: 25px;
   left: 50%;
@@ -79,28 +75,25 @@
   justify-content: center;
   text-align: center;
   pointer-events: none;
+  padding: 15px;
   box-sizing: border-box;
   transition: opacity 0.4s ease-in-out;
   z-index: 2;
   opacity: 1;
-  width: 140px; /* fijo */
+  width: 150px;
   height: auto;
+  max-width: 150px;
   max-height: 150px;
-  padding: 0; /* quitamos padding para que el borde funcione */
 }
 
-.imagen.derecha:hover .cuadro-texto {
+.imagen-jun.derecha:hover .cuadro-texto-jun {
   opacity: 0;
 }
 
-/* Borde interno con recorte visible */
-.cuadro-texto::before {
+.cuadro-texto-jun::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 5px;
   border: 2px solid transparent;
   background: black;
   -webkit-mask:
@@ -114,14 +107,11 @@
   mask-composite: exclude;
   pointer-events: none;
   z-index: 3;
-  box-sizing: border-box;
-  padding: 5px;
 }
 
-/* Texto recortado con espacio exacto dentro del borde */
-.cuadro-texto p {
+.cuadro-texto-jun p {
   font-family: 'Playfair Display', serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 700;
   background: black;
   -webkit-background-clip: text;
@@ -129,8 +119,6 @@
   color: transparent;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  margin: 5px;
   position: relative;
   z-index: 4;
-  word-break: break-word;
 }
