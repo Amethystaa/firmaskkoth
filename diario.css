@@ -1,18 +1,23 @@
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   background: #0a0a0a;
   color: white;
   font-family: serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diarioiza-cuerpo {
+  width: 978px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .diarioiza-portada {
-  width: 900px;
+  width: 100%;
   height: 400px;
   position: relative;
   overflow: hidden;
@@ -87,10 +92,8 @@ body {
 .diarioiza-bloque {
   display: flex;
   align-items: center;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 600px;
+  justify-content: space-between;
+  width: 700px;
   margin: 40px auto;
 }
 
