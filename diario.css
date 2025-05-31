@@ -3,7 +3,9 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   background: #0a0a0a;
   color: white;
   font-family: serif;
@@ -85,7 +87,9 @@ body {
 .diarioiza-bloque {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 600px;
   margin: 40px auto;
 }
