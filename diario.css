@@ -88,7 +88,7 @@ body {
 .diarioiza-linea {
   width: 2px;
   height: 150px;
-  color: var(--groups);
+  background-color: var(--groups);
   margin-top: 8px;
 }
 
