@@ -77,18 +77,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--groups);
   margin: 20px 0;
 }
 
 .diarioiza-icono-central i {
   font-size: 48px;
+   color: var(--groups);
 }
 
 .diarioiza-linea {
   width: 2px;
   height: 150px;
-   background: var(--groups);
+  color: var(--groups);
   margin-top: 8px;
 }
 
@@ -122,7 +122,7 @@ body {
 }
 
 .diarioiza-texto-bloque a {
-  background: var(--groups);
+  color: var(--groups);
   font-family: "Cinzel", serif;
   font-size: 20px;
   text-decoration: none;
