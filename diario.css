@@ -10,7 +10,7 @@ body {
 }
 
 .diarioiza-portada {
-  width: 978px;
+  width: 900px;
   height: 400px;
   position: relative;
   overflow: hidden;
@@ -86,7 +86,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 700px;
+  width: 600px;
   margin: 40px auto;
 }
 
