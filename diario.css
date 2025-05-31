@@ -12,7 +12,7 @@ body {
 .portada {
   width: 978px;
   height: 400px;
-  position: relative;
+  position: absolute;
   overflow: hidden;
   display: flex;
   justify-content: center;
