@@ -1,72 +1,77 @@
-.firma-izanami {
-  width: 400px;
-  height: 200px;
-  display: flex;
-  gap: 2px;
-  overflow: hidden;
-  font-family: 'Merriweather', serif;
-}
-
-.firma-izanami .imagen {
-  width: 199px;
-  height: 200px;
+.portada {
+  width: 978px;
+  height: 400px;
   position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.firma-izanami .imagen img {
+.portada .imagen {
+  width: 100%;
+  height: 100%;
+}
+
+.portada .imagen img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.firma-izanami .imagen.con-filtro img {
+.portada .imagen.con-filtro img {
   filter: brightness(0.25) sepia(1) hue-rotate(-45deg) saturate(3.5);
 }
 
-.firma-izanami .texto {
+.texto-portada {
   position: absolute;
-  bottom: 6px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70%;
-  color: rgba(255, 255, 255, 0.65); 
-  padding: 4px 8px;
-  font-size: 8.5px;
-  line-height: 1.5;
-  background: none;
   z-index: 2;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
   pointer-events: none;
-  backdrop-filter: none;
 }
 
-.firma-izanami .icono {
-  font-size: 25px;          
-  opacity: 0.65;             
-  margin-bottom: 6px;
-  display: block;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.firma-izanami .titulo {
+.texto-portada h1 {
   font-family: 'Quetine', cursive;
-  font-size: 18px;
+  font-size: 48px;
+  margin: 0;
   color: white;
 }
 
-.firma-izanami .sub {
+.texto-portada h2.espaciado {
   font-family: Georgia, serif;
-  font-size: 10px;
-  letter-spacing: 0.4em;
-  text-transform: uppercase;
+  font-size: 14px;
   color: white;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  margin-top: 10px;
 }
 
-/* Bloques de enlaces */
+.icono-central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.icono-central i {
+  font-size: 48px;
+}
+
+.linea {
+  width: 2px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.4);
+  margin-top: 8px;
+}
+
 .bloque {
   display: flex;
   align-items: center;
@@ -107,3 +112,4 @@
   margin-top: 5px;
   color: #ccc;
 }
+
