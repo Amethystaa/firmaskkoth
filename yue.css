@@ -1,0 +1,63 @@
+  .firma {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  gap: 10px;
+}
+
+.bloque {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'EB Garamond', serif;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  z-index: 0;
+}
+
+.imagen-filtro {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.izquierda .imagen-filtro {
+  filter: brightness(0.25) sepia(1) hue-rotate(-45deg) saturate(2);
+}
+
+.centro .imagen-filtro {
+  filter: grayscale(100%) brightness(0.25);
+}
+
+.derecha .imagen-filtro {
+  filter: brightness(0.25) sepia(1) hue-rotate(-45deg) saturate(2);
+}
+
+.texto {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.icono {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+  z-index: 3;
+}
