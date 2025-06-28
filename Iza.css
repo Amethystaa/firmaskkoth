@@ -72,8 +72,11 @@
 
 .iza-icon i {
   font-size: 70px;
-  color: var(--groups);
-  opacity: 0.8;
+  background: -webkit-linear-gradient(var(--groups), #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   display: inline-block;
 }
 
