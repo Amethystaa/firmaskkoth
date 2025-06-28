@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Island+Moments&family=Nanum+Brush+Script&family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Island+Moments&family=Quintessential&display=swap');
 
 .iza-post {
   width: 410px;
@@ -12,7 +12,7 @@
   font-family: "Island Moments", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 42px;
+  font-size: 60px;
   text-align: center;
   margin-bottom: 4px;
   padding-top: 10px;
@@ -28,7 +28,7 @@
 .iza-line {
   width: 80%;
   max-width: 420px;
-  height: 1px;
+  height: 2px;
   background-color: var(--groups);
   margin: 0 auto 6px auto;
   opacity: 0.3;
@@ -42,8 +42,10 @@
 
 .iza-frase {
   text-align: center;
-  font-family: "Nanum Brush Script", cursive;
-  font-size: 16px;
+ font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
   margin-bottom: 6px;
   line-height: 1.5;
   opacity: 0.9;
@@ -51,7 +53,9 @@
 
 .iza-fraficha {
   text-align: center;
-  font-family: "Nanum Brush Script", cursive;
+ font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 30px;
   margin-bottom: 6px;
   line-height: 1.5;
@@ -72,7 +76,7 @@
 
 .iza-div {
   width: 2px;
-  height: 12px;
+  height: 20px;
   background-color: var(--groups);
   margin: 4px auto;
   opacity: 0.3;
@@ -90,15 +94,16 @@
 
 .iza-init {
   float: left;
-   font-family: "Island Moments", cursive;
+  font-family: "Island Moments", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 58px;
+  font-size: 105px;
   line-height: 1;
-  padding-right: 10px;
-  padding-top: 15px;
-  padding-left: 15px; 
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-left: 10px;
   display: block;
+  margin-bottom: -20px !important;
   background: -webkit-linear-gradient(var(--groups), #000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
