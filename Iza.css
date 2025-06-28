@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Island+Moments&family=Nanum+Brush+Script&family=Protest+Revolution&display=swap');
+
+.iza-post {
+  width: 410px;
+  margin: auto;
+  font-family: 'EB Garamond', serif;
+  background-color: transparent;
+  padding: 0;
+}
+
+.iza-tit {
+  font-family: "Island Moments", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 4px;
+  padding-top: 10px;
+  background: -webkit-linear-gradient(var(--groups), #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  line-height: 1.2;
+  overflow: visible;    
+}
+
+.iza-line {
+  width: 80%;
+  max-width: 420px;
+  height: 1px;
+  background-color: var(--groups);
+  margin: 0 auto 6px auto;
+  opacity: 0.3;
+}
+
+.iza-name {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.iza-frase {
+  text-align: center;
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 16px;
+  margin-bottom: 6px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.iza-fraficha {
+  text-align: center;
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 30px;
+  margin-bottom: 6px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.iza-icon {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.iza-icon i {
+  font-size: 70px;
+  color: var(--groups);
+  opacity: 0.8;
+  display: inline-block;
+}
+
+.iza-div {
+  width: 2px;
+  height: 12px;
+  background-color: var(--groups);
+  margin: 4px auto;
+  opacity: 0.3;
+}
+
+.iza-txt {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.6;
+  margin-top: 16px;
+  overflow: visible;        
+  position: relative;
+  padding-top: 10px;         
+}
+
+.iza-init {
+  float: left;
+   font-family: "Island Moments", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 58px;
+  line-height: 1;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-left: 15px; 
+  display: block;
+  background: -webkit-linear-gradient(var(--groups), #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;  
+}
