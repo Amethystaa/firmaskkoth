@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
 
-body {
-  margin: 0;
-  padding: 0;
+.mina-wrapper {
   background-color: #111;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-.container {
+.mina-container {
   width: 880px;
   height: 400px;
   position: relative;
 }
 
-.background {
+.mina-background {
   background: url('https://i.imgur.com/xg2S6qk.png') center/cover no-repeat;
   width: 100%;
   height: 100%;
@@ -24,10 +25,10 @@ body {
   position: relative;
 }
 
-.content {
+.mina-content {
   width: 600px;
   position: absolute;
-  top: 300px; 
+  top: 300px; /* Ajuste vertical */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -35,19 +36,21 @@ body {
   z-index: 2;
 }
 
-.left, .right {
+.mina-left,
+.mina-right {
   width: 49%;
   text-align: center;
   position: relative;
 }
 
-.left img, .right img {
+.mina-left img,
+.mina-right img {
   width: 100%;
   max-height: 260px;
   object-fit: cover;
 }
 
-.name-tag {
+.mina-name-tag {
   font-family: 'Cinzel Decorative', serif;
   background: white;
   color: black;
@@ -58,14 +61,14 @@ body {
   display: inline-block;
 }
 
-.quote {
+.mina-quote {
   font-size: 14px;
   font-style: italic;
   margin-top: 10px;
   color: white;
 }
 
-.vertical-word {
+.mina-vertical-word {
   position: absolute;
   top: 50%;
   right: -40px;
@@ -74,5 +77,5 @@ body {
   font-family: 'Great Vibes', cursive;
   color: white;
   white-space: nowrap;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
