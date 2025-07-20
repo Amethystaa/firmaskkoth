@@ -59,16 +59,16 @@
 .mina-frase {
   font-size: 9px;
   font-style: italic;
-  margin-top: 10px;
+  padding: 10px;
   color: white;
   line-height: 1.6;
-  text-align: justify;
+  text-align: center;
 }
 
 .mina-vertical {
   position: absolute;
-  top: 40%;
-  right: -45px;
+  top: 50%;
+  right: -55px;
   transform: rotate(90deg) translateY(-50%);
   font-size: 48px;
   font-family: 'Great Vibes', cursive;
