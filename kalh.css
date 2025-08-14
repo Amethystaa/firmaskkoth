@@ -1,7 +1,7 @@
 .kalh-firma {
   width: 300px;
   height: 200px;
-  border: 3px solid #d9d9d9;
+  border: 3px solid #3d3d3d;
   position: relative;
   overflow: hidden;
   background-size: cover;
@@ -19,9 +19,9 @@
   pointer-events: none;
 }
 .kalh-icon .game-icon {
-  font-size: 220px;
+  font-size: 180px;
   line-height: 1;
-  opacity: 0.6;
+  opacity: 0.8;
   color: #bdbdbd;
   filter: grayscale(100%);
 }
