@@ -19,9 +19,9 @@
   pointer-events: none;
 }
 .kalh-icon .game-icon {
-  font-size: 180px;
+  font-size: 150px;
   line-height: 1;
-  opacity: 0.4;
+  opacity: 0.2;
   color: #bdbdbd;
   filter: grayscale(100%);
 }
