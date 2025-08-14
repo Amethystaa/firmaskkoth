@@ -1,0 +1,41 @@
+.kalh-firma {
+  width: 300px;
+  height: 200px;
+  border: 3px solid #d9d9d9;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.kalh-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  pointer-events: none;
+}
+.kalh-icon .game-icon {
+  font-size: 220px;
+  line-height: 1;
+  opacity: 0.6;
+  color: #bdbdbd;
+  filter: grayscale(100%);
+}
+
+
+.kalh-text {
+  position: absolute;
+  bottom: 18px;
+  left: 15px;         
+  right: 15px;      
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+  line-height: 1.35;
+  text-shadow: 0 1px 1px rgba(0,0,0,.35);
