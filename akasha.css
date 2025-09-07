@@ -18,11 +18,14 @@
 }
 
 .akasha-icon .game-icon{
-  font-size:22px;
-  color:#ff2a2a;                     
-  opacity:.9;
-  mix-blend-mode:multiply;
-  filter: brightness(1.4) contrast(1.2);
+font-size: 35px;
+position: absolute;
+left: 50px;
+bottom: 34px;
+right: 160px;
+color: #c78484;
+opacity: 0.3;
+filter: brightness(1.4) contrast(1.2);
 }
 
 .akasha-text{
@@ -33,9 +36,9 @@
 }
 
 .akasha-thumb{
-  position:absolute; right:10px; top:40%;
+  position:absolute; right:25px; top:40%;
   width:110px; height:110px;
-  transform:translateY(-34%) rotate(-8deg);
+  transform:translateY(-34%) rotate(-10deg);
   border:3px solid rgba(255,255,255,.75);
   box-shadow:0 6px 16px rgba(0,0,0,.45);
   overflow:hidden; background:rgba(0,0,0,.25);
