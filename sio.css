@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+.sig-400{
+  width:400px; height:200px;
+  border:2px solid #d9d9d9;     
+  padding:2px;                    
+  position:relative; overflow:hidden;
+  background:transparent;       
+}
+
+
+.sig-400 .sig-bg{
+  position:absolute; inset:2px;   
+  background-size:cover; background-position:center;
+  transition:filter .35s ease;
+}
+
+
+.sig-400 .sig-word{
+  position:absolute; inset:0; display:flex;
+  align-items:center; justify-content:center; gap:.15em;
+  font:700 28px/1 "Cinzel", serif;
+  color:#fff; text-shadow:0 1px 2px rgba(0,0,0,.6);
+  pointer-events:none;           
+}
+
+.sig-400 .sig-word span{
+  opacity:0; transform:translateY(6px);
+  transition:opacity .4s ease, transform .4s ease;
+}
+
+.sig-400:hover .sig-bg{ filter:grayscale(100%); }
+.sig-400:hover .sig-word span:nth-child(1){ opacity:1; transform:none; transition-delay:.05s; }
+.sig-400:hover .sig-word span:nth-child(2){ opacity:1; transform:none; transition-delay:.35s; }
+.sig-400:hover .sig-word span:nth-child(3){ opacity:1; transform:none; transition-delay:.65s; }
