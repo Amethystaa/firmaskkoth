@@ -1,0 +1,41 @@
+.akasha{
+  width: 400px; height: 230px;
+  position: relative; overflow: hidden;
+  background-size: cover; background-position: center;
+}
+
+.akasha::before,.akasha::after{
+  content:""; position:absolute; left:0; right:0; height:3px;
+  background:#b10e0e; mix-blend-mode:multiply; opacity:.95;
+}
+.akasha::before{ top:14px; }
+.akasha::after{  bottom:14px; }
+
+.akasha-left{
+  position:absolute; left:20px; bottom:30px;
+  right:160px;  
+  color:#fff; padding:4px 10px;
+  font: 700 11px/1.2 Georgia,"Times New Roman",serif;
+  letter-spacing:.3px;
+  text-shadow:0 1px 1px rgba(0,0,0,.45);
+  display:flex; align-items:left; gap:6px;
+  background: transparent;
+}
+
+.akasha-left .game-icon{
+  font-size:20px;
+  color:#b10e0e;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,.5));
+}
+
+.akasha-thumb{
+  position:absolute; right:5px; top:40%;
+  width:110px; height:110px;
+  transform:translateY(-34%) rotate(-8deg);
+  border:3px solid rgba(255,255,255,.75);
+  box-shadow:0 6px 16px rgba(0,0,0,.45);
+  overflow:hidden; background:rgba(0,0,0,.25);
+}
+.akasha-thumb img{
+  width:100%; height:100%; object-fit:cover; display:block;
+}
