@@ -31,7 +31,7 @@
 .lucio-text {
   position: absolute;
   right: 20px;
-  top: 50%;
+  top: 80%;
   transform: translateY(-50%);
   width: 100px;
   padding-left: 10px;
