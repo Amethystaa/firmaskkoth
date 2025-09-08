@@ -1,16 +1,16 @@
-.gio-box {
-  width: 400px;
-  height: 200px;
+.lucio-box {
+  width: 300px;
+  height: 150px;
   border: 3px solid #222;
   background-size: cover;
   background-position: center;
   position: relative;
   overflow: hidden;
-  --image: url('default.jpg'); /* Imagen por defecto */
+  --image: url('default.jpg'); 
   background-image: var(--image);
 }
 
-.gioicon {
+.lucioicon {
     color:transparent;
   text-align: right; 
   font:100px 'Playfair Display', serif; 
@@ -28,7 +28,7 @@
   transform: translateY(-50%);
   }
   
-.gio-text {
+.lucio-text {
   position: absolute;
   right: 20px;
   top: 50%;
@@ -45,7 +45,7 @@
 
 }
 
-.gio-text span {
+.lucio-text span {
   font-family: "Cinzel Decorative", serif;
   font-weight: 700;
   font-style: normal;
