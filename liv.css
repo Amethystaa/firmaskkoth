@@ -44,9 +44,9 @@
   position: absolute; left: 18px; right: 18px; bottom: 14px; z-index: 3;
   display: flex; align-items: center; justify-content: center; gap: 14px;
 }
-.liv .diamond{ font-size: 20px; line-height: 1; opacity: .9; }
+.liv .diamond{ font-size: 16px; line-height: 1; opacity: .7; }
 .liv .line-text{
-  font: 700 11px/1.3 Arial, Helvetica, sans-serif;
+  font: 700 9px/1.3 Arial, Helvetica, sans-serif;
   letter-spacing: .06em; text-transform: uppercase;
   text-shadow: 0 1px 1px rgba(0,0,0,.55);
   transition: opacity .25s ease;
