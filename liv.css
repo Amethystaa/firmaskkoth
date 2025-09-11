@@ -6,7 +6,6 @@
   isolation: isolate; color: #eaeaea; text-align: center;
 }
 
-
 .liv .bg{
   position: absolute; inset: 0;
   background-size: cover; background-position: center;
@@ -25,8 +24,9 @@
 
 .liv .overlay{
   position: absolute; inset: 0; z-index: 2;
-  background: linear-gradient(180deg, rgba(40,80,120,.35) 0%, rgba(40,80,120,.55) 100%);
+  background: linear-gradient(180deg, #4c6d7b55 0%, #4c6d7b99 100%);
   mix-blend-mode: screen;
+  transition: background .35s ease;
 }
 
 
@@ -63,6 +63,11 @@
 .liv:hover .bg,
 .liv.liv-2:hover .bg-left,
 .liv.liv-2:hover .bg-right{ filter: grayscale(100%) brightness(.9); }
+
+.liv:hover .overlay{
+  background: linear-gradient(180deg, #4c6d7b 0%, #777 100%);
+}
+
 .liv:hover .line-text{ opacity: 0; }
 .liv:hover .hover-icon{ opacity: 1; }
 
