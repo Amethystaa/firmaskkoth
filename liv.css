@@ -24,10 +24,10 @@
 
 .liv .overlay{
   position: absolute; inset: 0; z-index: 2;
-  background: linear-gradient(0deg, rgba(76,109,123,.6) 0%, rgba(76,109,123,.0) 70%);
-  mix-blend-mode: screen;
+  background: linear-gradient(0deg, rgba(76,109,123,.7) 0%, rgba(76,109,123,0) 70%);
   transition: background .35s ease;
 }
+
 
 
 .liv .runic{
@@ -67,6 +67,7 @@
 .liv:hover .overlay{
   background: linear-gradient(0deg, rgba(76,109,123,.9) 0%, rgba(119,119,119,.6) 100%);
 }
+
 
 .liv:hover .line-text{ opacity: 0; }
 .liv:hover .hover-icon{ opacity: 1; }
