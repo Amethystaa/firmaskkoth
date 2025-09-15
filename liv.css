@@ -24,7 +24,7 @@
 
 .liv .overlay{
   position: absolute; inset: 0; z-index: 2;
-  background: linear-gradient(0deg, rgba(76,109,123,.7) 0%, rgba(76,109,123,0) 70%);
+  background: transparent;
   transition: background .35s ease;
 }
 
@@ -65,7 +65,8 @@
 .liv.liv-2:hover .bg-right{ filter: grayscale(100%) brightness(.9); }
 
 .liv:hover .overlay{
-  background: linear-gradient(0deg, rgba(76,109,123,.9) 0%, rgba(119,119,119,.6) 100%);
+  background: linear-gradient(0deg, rgba(76,109,123,.9) 50%, rgba(119,119,119,.7) 100%);
+  mix-blend-mode: multiply;
 }
 
 
