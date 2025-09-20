@@ -3,8 +3,8 @@
 .tab-iza .icon .game-icon{font-size:50px;color:#848484 margin:15px}
 .tab-iza .title{font-family:"Cherish",cursive;font-size:48px;line-height:1.1;text-align:center;color:var(--groups);margin:2px 0 8px}
 .tab-iza .divider{height:1px;background:currentColor;opacity:.45;margin:10px auto 12px;width:82%;color:var(--groups)}
-.tab-iza .meta{font:600 12px/1.6 "EB Garamond",serif;letter-spacing:.12em;text-transform:uppercase;text-align:center;opacity:.9;margin-bottom:18px}
-.tab-iza .meta .who a{color:var(--groups);text-decoration:none;border-bottom:1px dashed rgba(230,230,230,.25)}
+.tab-iza .meta{font:600 12px/1.6 "EB Garamond",serif;letter-spacing:.12em;text-transform:uppercase;text-align:center;opacity:.5;margin-bottom:18px}
+.tab-iza .meta .who a{color:var(--groups);text-decoration:none; dashed rgba(230,230,230,.25)}
 .tab-iza .body{font:400 16px/1.75 "EB Garamond",serif;text-align:justify}
 .tab-iza .body .dropcap{float:left;font-family:"Cherish",cursive;color:var(--groups);font-size:64px;line-height:.9;padding:6px 20px 5px }
 .tab-iza .quote{width:75%;margin:14px auto;text-align:center;font:italic 15px/1.6 "EB Garamond",serif;opacity:.65;text-transform:none}
