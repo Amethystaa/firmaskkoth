@@ -7,4 +7,4 @@
 .tab-iza .meta .who a{color:var(--groups);text-decoration:none;border-bottom:1px dashed rgba(230,230,230,.25)}
 .tab-iza .body{font:400 16px/1.75 "EB Garamond",serif;text-align:justify}
 .tab-iza .body .dropcap{float:left;font-family:"Cherish",cursive;color:var(--groups);font-size:64px;line-height:.9;padding:6px 20px 5px }
-.tab-iza .quote{text-align:center;font:italic 15px/1.6 "EB Garamond",serif;opacity:.65;margin:12px 0}
+.tab-iza .quote{width:75%;margin:14px auto;text-align:center;font:italic 15px/1.6 "EB Garamond",serif;opacity:.65;text-transform:none}
