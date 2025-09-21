@@ -33,9 +33,9 @@
 
 .althea .icon{
   position:absolute; right:calc(var(--right)/2); top:50%; transform:translate(50%,-50%);
-  z-index:4; opacity:.6;
+  z-index:4; opacity:.4;
 }
-.althea .icon .game-icon{font-size:36px; color:#fff;}
+.althea .icon .game-icon{font-size:60px; color:#fff;}
 
 
 .althea .phrase{
