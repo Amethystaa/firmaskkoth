@@ -33,9 +33,11 @@
 
 .althea .icon{
   position:absolute; right:calc(var(--right)/2); top:50%; transform:translate(50%,-50%);
-  z-index:4; opacity:.4;
+  z-index:4;
+  mix-blend-mode:soft-light;           
+  opacity:.85;
 }
-.althea .icon .game-icon{font-size:60px; color:#fff;}
+.althea .icon .game-icon{font-size:70px; color:#fff;}
 
 
 .althea .phrase{
