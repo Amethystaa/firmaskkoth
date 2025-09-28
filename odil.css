@@ -1,6 +1,5 @@
 .odil{
   display:inline-block;
-  border:1px solid rgba(255,255,255,.25);
 }
 .odil .row{
   display:flex;
@@ -24,6 +23,7 @@
 .odil .phrase{
   width:250px;
   padding:6px 10px;
+  text-align:center;
   font:700 8px/1.4 "EB Garamond",serif;
   text-transform:uppercase;
   letter-spacing:.1em;
