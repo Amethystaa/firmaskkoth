@@ -1,0 +1,35 @@
+.odil{
+  display:inline-block;
+  border:1px solid rgba(255,255,255,.25);
+}
+.odil .row{
+  display:flex;
+}
+.odil .img{
+  width:150px; height:150px;
+  background-size:cover; background-position:center;
+  position:relative; overflow:hidden;
+}
+.odil .img.color::before{
+  content:""; position:absolute; inset:0;
+  background:#000; filter:grayscale(100%);
+  mix-blend-mode:saturation; opacity:1;
+}
+.odil .img.color::after{
+  content:""; position:absolute; inset:0;
+  background:#2aa9a1; 
+  mix-blend-mode:multiply;
+  opacity:.6;
+}
+.odil .phrase{
+  width:250px;
+  padding:6px 10px;
+  font:700 8px/1.4 "EB Garamond",serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  color:#eaeaea;
+  text-align:center;
+}
+.odil .phrase b{
+  color:#1b6b68; 
+}
