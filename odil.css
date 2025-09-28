@@ -16,13 +16,13 @@
 }
 .odil .img.color::after{
   content:""; position:absolute; inset:0;
-  background:#2aa9a1; 
+  background:#346352; 
   mix-blend-mode:multiply;
-  opacity:.6;
+  opacity:.8;
 }
 .odil .phrase{
-  width:300px;
-  padding:6px 10px;
+  width:290px;
+  padding:6px;
   text-align:center;
   font:700 8px/1.4 "EB Garamond",serif;
   text-transform:uppercase;
