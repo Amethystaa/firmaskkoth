@@ -1,64 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Nanum+Brush+Script&family=Protest+Revolution&display=swap');
-.firma {
-  width: 400px;
-  height: 200px;
-  display: flex;
-  gap: 10px;
+
+.firma{
+  width:min(350px,100%);
+  margin:0 auto;
+  display:grid;
+  gap:8px;
+  --vino:#9e0202;
 }
 
-.bloque {
-  flex: 1;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 15px 10px;
-  box-sizing: border-box;
-  color: white;
-  font-family: 'EB Garamond', serif;
-  font-size: 12px;
-  line-height: 1;
-  text-align: center;
-  z-index: 0;
+
+.firma-frame{
+  display:grid;
+  grid-template-columns:45% 55%;
+  gap:4px;
+  align-items:stretch;
 }
 
-.imagen-filtro {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  z-index: 0;
+
+.columna-izq{
+  display:grid;
 }
 
-.izquierda .imagen-filtro {
-  filter: brightness(0.25) sepia(1) hue-rotate(-45deg) saturate(2);
+.panel{
+  position:relative;
+  margin:0;
+  overflow:hidden;
 }
 
-.centro .imagen-filtro {
-  filter: grayscale(100%) brightness(0.25);
+.panel img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  filter:grayscale(100%);
+  transition:filter .3s ease;
 }
 
-.derecha .imagen-filtro {
-  filter: brightness(0.25) sepia(1) hue-rotate(-45deg) saturate(2);
+
+.panel-top{ height:80px; }
+.panel-bottom{ height:120px; }
+.panel-right{ height:200px; } 
+
+
+.panel::after{
+  content:"";
+  position:absolute; inset:0;
+  background:var(--vino);
+  mix-blend-mode:multiply;
+  opacity:0;
+  transition:opacity .3s ease;
 }
 
-.texto {
-  position: relative;
-  z-index: 2;
-  color: white;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+
+.firma-quote{
+  margin:0;
+  text-align:center;
+  font-size:10px;
+  opacity:.9;
+  text-transform: Uppercase;
+  transition:opacity .25s ease;
 }
 
-.icono {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 40px;
-  border: 2px solid white;
-  border-radius: 50%;
-  z-index: 3;
+
+.firma:hover .firma-quote{ opacity:0; }
+.firma:hover .panel::after{ opacity:0.85; }
+
+
+@media (max-width:370px){
+  .firma-frame{ grid-template-columns:1fr; }
+  .panel-right{ height:200px; }
+  .columna-izq{ grid-template-rows:1fr 1fr; }
 }
