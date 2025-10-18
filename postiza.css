@@ -1,4 +1,4 @@
-.tab-iza{max-width:430px;margin:0 auto;color:#abaaaa}
+.tab-iza{max-width:400px;margin:0 auto;color:#abaaaa}
 .tab-iza .icon{display:flex;justify-content:center;align-items:center;margin:10px 0 12px}
 .tab-iza .icon .game-icon{font-size:50px;color:#848484 margin:15px}
 .tab-iza .title{font-family:"Cherish",cursive;font-size:48px;line-height:1.1;text-align:center;color:var(--groups);margin:2px 0 8px}
@@ -6,5 +6,5 @@
 .tab-iza .meta{font:600 12px/1.6 "EB Garamond",serif;letter-spacing:.12em;text-transform:uppercase;text-align:center;opacity:.95;margin-bottom:18px}
 .tab-iza .meta .who a{color:var(--groups);text-decoration:none; dashed rgba(230,230,230,.25)}
 .tab-iza .body{font:400 16px/1.75 "EB Garamond",serif;text-align:justify}
-.tab-iza .body .dropcap{float:left;font-family:"Cherish",cursive;color:var(--groups);font-size:64px;line-height:.9;padding:6px 20px 5px }
+.tab-iza .body .dropcap{float:left;font-family:"Cherish",cursive;color:var(--groups);font-size:64px;line-height:.7;padding:6px 20px 5px; margin: 10px;}
 .tab-iza .quote{width:75%;margin:14px auto;text-align:center;font:italic 15px/1.6 "EB Garamond",serif;opacity:.65;text-transform:none}
