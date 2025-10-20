@@ -4,7 +4,7 @@
 
 
 .althea-post {
-  width: 440px;
+  width: 420px;
   margin: auto;
   font-family: 'EB Garamond', serif;
   background-color: transparent;
@@ -13,7 +13,7 @@
 
 .althea-tit {
   font-family: 'Ruthie', cursive;
-  font-size: 50px;
+  font-size: 55px;
   text-align: center;
   color: var(--groups);
   margin-bottom: 4px;
@@ -33,6 +33,7 @@
   font-size: 14px;
   text-align: center;
   margin-bottom: 6px;
+  text-transform: uppercase;
 }
 
 .althea-frase {
@@ -50,15 +51,15 @@
 }
 
 .althea-icon i {
-  font-size: 50px;
+  font-size: 65px;
   color: var(--groups);
-  opacity: 0.8;
+  opacity: 0.6;
   display: inline-block;
 }
 
 .althea-div {
-  width: 2px;
-  height: 20px;
+  width: 4px;
+  height: 35px;
   background-color: var(--groups);
   margin: 2px auto;
   opacity: 0.3;
@@ -122,6 +123,7 @@
   font-size: 14px;
   text-align: center;
   margin-bottom: 6px;
+  text-transform: uppercase;
 }
 
 .asuna-frase {
