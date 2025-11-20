@@ -51,7 +51,7 @@
   font-family: "Spectral", serif;
   font-size: 12px;
   font-style: italic;
-  background: -webkit-linear-gradient(var(--groups), #e6e6e6);
+  color: #e6e6e6;
 }
 
 .mina-phrase-box::before,
