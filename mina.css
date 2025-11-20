@@ -12,7 +12,7 @@
   text-align: center;
   margin: 0 0 8px;
   padding: 25px;
-  background: -webkit-linear-gradient(var(--groups), #e6e6e6);
+  background: -webkit-linear-gradient(var(--groups), #3d3d3d);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -35,7 +35,7 @@
 }
 .mina-icon-gradient i {
   font-size: 65px;
-  background: -webkit-linear-gradient(var(--groups), #e6e6e6);
+  background: -webkit-linear-gradient(var(--groups), #3d3d3d);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -51,7 +51,7 @@
   font-family: "Spectral", serif;
   font-size: 12px;
   font-style: italic;
-  color: #e6e6e6;
+  background: -webkit-linear-gradient(var(--groups), #e6e6e6);
 }
 
 .mina-phrase-box::before,
@@ -85,7 +85,7 @@
   font-size: 55px;
   float: left;
   margin: -5px 20px -5px 20px;
-  background: -webkit-linear-gradient(var(--groups), #e6e6e6);
+  background: -webkit-linear-gradient(var(--groups), #3d3d3d);
   -webkit-background-clip: text;
   color: transparent;
 }
