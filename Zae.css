@@ -1,0 +1,112 @@
+/* CONTENEDOR */
+.firma-ukthus{
+  width: 400px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+
+  /* TU FONDO EXACTO */
+  background: url("https://i.imgur.com/Uw9WE4v.png") center/cover no-repeat;
+}
+
+/* GIF CUADRADO PEQUEÑO (recuadro 1) */
+.gif-box{
+  position: absolute;
+
+  /* Ajuste para caer dentro del recuadro que marcaste (arriba-izquierda) */
+  left: 22px;
+  top: 25px;
+
+  /* MÁS PEQUEÑO */
+  width: 150px;
+  height: 150px;
+}
+
+.gif{
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1.25s ease;
+}
+
+.gif-base{ opacity: 1; }
+.gif-hover{ opacity: 0; }
+
+.firma-ukthus:hover .gif-base{ opacity: 0; }
+.firma-ukthus:hover .gif-hover{ opacity: 1; }
+
+/* FRASE ABAJO DERECHA */
+.frase-box{
+  position: absolute;
+  right: 15px;
+  bottom: 30px;
+  width: 200px;
+  text-align: right;
+  
+  font-family: "Tangerine", serif;
+  font-size: 11.5px;
+  color: rgba(245,245,245,.95);
+  text-shadow: 0 0 8px rgba(255,120,90,.65);
+}
+
+.frase{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  white-space: nowrap;
+  max-width: 100%;
+  transition: opacity 1.25s ease, transform 1.25s ease;
+}
+
+.frase-base{ opacity: 1; transform: translateY(0); }
+.frase-hover{ opacity: 0; transform: translateY(4px); }
+
+.firma-ukthus:hover .frase-base{ opacity: 0; transform: translateY(-4px); }
+.firma-ukthus:hover .frase-hover{ opacity: 1; transform: translateY(0); }
+
+/* ICONO FIJO (puede reaccionar al hover sin cambiar de icono) */
+.zhae-icon{
+  position: absolute;
+
+  /* zona de tu 3era imagen (aprox centro-derecha) */
+  left: 262px;
+  top: 56px;
+
+  font-size: 40px;
+  color: rgba(245,245,245,.9);
+
+  text-shadow:
+    0 0 6px rgba(255,120,90,.30),
+    0 0 14px rgba(255,170,120,.22);
+
+  transition: transform .25s ease, text-shadow .25s ease, opacity .25s ease;
+}
+
+.firma-ukthus:hover .zhae-icon{
+  transform: scale(1.05);
+  text-shadow:
+    0 0 8px rgba(255,140,100,.42),
+    0 0 18px rgba(255,190,130,.32);
+}
+
+/* FLAMAS OVERLAY (solo hover) */
+.overlay-flamas{
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  opacity: 0;
+  transition: opacity .25s ease;
+
+  mix-blend-mode: screen;
+  filter: contrast(1.1) saturate(1.1);
+}
+
+.firma-ukthus:hover .overlay-flamas{
+  opacity: .85;
+}
