@@ -46,7 +46,7 @@
   
   font-family: "Tangerine", serif;
   font-size: 11.5px;
-  line-height: 1.2px;
+  line-height: 1.2;
   color: rgba(245,245,245,.95);
   text-shadow: 0 0 8px rgba(255,120,90,.65);
 }
