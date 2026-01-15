@@ -45,7 +45,7 @@
   text-align: right;
   
   font-family: "Cinzel", serif;
-  font-size: 8.5px;
+  font-size: 9px;
   line-height: 1.2;
   color: rgba(245,245,245,.95);
   text-shadow: 0 0 8px rgba(255,120,90,.65);
@@ -71,8 +71,8 @@
   position: absolute;
 
   /* zona de tu 3era imagen (aprox centro-derecha) */
-  left: 262px;
-  top: 56px;
+  left: 270px;
+  top: 76px;
 
   font-size: 40px;
   color: rgba(245,245,245,.9);
