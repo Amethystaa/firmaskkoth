@@ -1,0 +1,12 @@
+.firma-wrap{width:500px;display:flex;flex-direction:column;align-items:center;position:relative}
+.firma-titulo{width:500px;font-family:'Quetine',cursive;font-size:34px;line-height:1;text-align:center;margin-bottom:-8px;position:relative;z-index:3;pointer-events:none}
+.firma-imgs{width:500px;height:200px;display:flex;overflow:hidden;position:relative}.col{height:200px;background-size:cover;background-position:center;background-repeat:no-repeat;transition:.35s}
+.left,.right{width:125px}
+.center{width:250px}
+.left{background-image:url('https://2img.net/i.imgur.com/Xq56MER.png')}
+.center{background-image:url('https://2img.net/i.imgur.com/ZdjAlZc.gif')}
+.right{background-image:url('https://2img.net/i.imgur.com/E92ULSF.png')}
+.firma-imgs:hover .left{background-image:url('https://2img.net/i.imgur.com/9VGJdvb.png')}
+.firma-imgs:hover .center{background-image:url('https://2img.net/i.imgur.com/Dw5RDqe.gif')}
+.firma-imgs:hover .right{background-image:url('https://2img.net/i.imgur.com/ujJrGS7.png')}
+.firma-texto{width:500px;margin-top:8px;text-align:center;font-family:Arial,Helvetica,sans-serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;line-height:1.4}
