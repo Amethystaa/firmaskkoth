@@ -1,0 +1,79 @@
+.s-b{
+  width:400px;
+  height:200px;
+  position:relative;
+  display:inline-block;
+  font:11px serif;
+  overflow:visible;
+  margin-bottom:40px;
+  cursor:pointer
+}
+.s-i{position:absolute;
+     inset:0;
+     background:center/cover;
+     transition:1.5s
+    }
+.s-2{background-image:url('https://2img.net/i.imgur.com/pkKfzhS.png');
+     opacity:0
+    }
+.s-1{background-image:url('https://2img.net/i.imgur.com/B5qOdEw.png')
+    }
+.s-b:hover .s-2{
+  opacity:1
+    }
+.s-b:hover .s-1{
+  opacity:0
+}
+.s-l{
+  position:absolute;
+  left:0;
+  top:0;
+  width:225px;
+  height:200px;
+  z-index:2;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
+.s-c{
+  position:absolute;
+     inset:0;
+  background:#4c7264;
+  mix-blend-mode:multiply;
+  filter:contrast(1.8)brightness(.6);z-index:1
+}
+.s-g{
+  position:absolute;
+  inset:0;background:url('https://i.pinimg.com/originals/e0/69/05/e06905c740661eaec7ddf5369f5c080e.gif')center/cover;
+  opacity:.8
+}
+.s-ic{
+  position:absolute;
+  font-size:70px;
+  color:#fffe;
+  z-index:5;
+  transition:1s;
+  filter:drop-shadow(0 0 5px #0008)
+}
+.s-h{
+  opacity:0
+}
+.s-b:hover .s-n{
+  opacity:0
+}
+.s-b:hover .s-h{
+  opacity:1;
+  font-size:85px;
+  color:#fff;
+  filter:drop-shadow(0 0 20px #fffb)
+}
+.s-t{
+  position:absolute;
+     top:210px;
+  width:400px;
+  text-align:center;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  line-height:1.2
+}
