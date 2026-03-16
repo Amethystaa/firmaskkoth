@@ -1,0 +1,355 @@
+@font-face {
+    font-family: "ChildrenSignature";
+    src: url("https://dl.dropboxusercontent.com/scl/fi/481vmoymnhbj6mwpnmhvp/Children-Signature.ttf?rlkey=c49tkt04so9nfv3ivnjiwqm3d") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Crayon";
+    src: url("https://dl.dropboxusercontent.com/scl/fi/dz9d7mdk988cax0dcqte7/DK-Crayon-Crumble.ttf?rlkey=rt60zcwt116fcp7i6gj7jo1fx") format("truetype");
+    font-display: swap;
+}
+
+/* base */
+
+.gavril-sheet {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.gavril-sheet * {
+    box-sizing: border-box;
+}
+
+.gavril-title {
+    position: absolute;
+    font-family: "Crayon";
+    color: #6a4b3d;
+    letter-spacing: .5px;
+}
+
+.gavril-text {
+    position: absolute;
+    overflow: auto;
+    font-family: "ChildrenSignature";
+    font-size: 32px;
+    line-height: 1.36;
+    color: #5a3f34;
+    text-align: justify;
+    text-shadow:
+        .35px 0 currentColor,
+        -.35px 0 currentColor,
+        0 .35px currentColor,
+        0 -.35px currentColor;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.gavril-text::-webkit-scrollbar {
+    display: none;
+}
+
+.gavril-sign {
+    position: absolute;
+    text-align: right;
+    font-family: "ChildrenSignature";
+    font-size: 42px;
+    color: var(--groups);
+    text-shadow:
+        .3px 0 currentColor,
+        -.3px 0 currentColor,
+        0 .3px currentColor,
+        0 -.3px currentColor;
+}
+
+.gavril-stamp {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gavril-stamp img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    opacity: .80;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,.18));
+    transform: rotate(40deg);
+}
+
+.gavril-note {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.gavril-note img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,.25));
+}
+
+.gavril-note-text {
+    font-family: "ChildrenSignature";
+    font-size: 30px;
+    color: #c45a2c;
+    line-height: 1.2;
+    text-shadow: .2px 0 currentColor;
+}
+
+.gavril-halfimg {
+    position: absolute;
+    overflow: hidden;
+}
+
+.gavril-halfimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: saturate(.95) contrast(1.02);
+}
+
+/* hoja izquierda historia */
+
+.gavril-left-story {
+    width: 500px;
+    height: 700px;
+    background: url("https://i.imgur.com/5zetcc6.png") center/100% 100% no-repeat;
+}
+
+.gavril-left-story .gavril-title {
+    top: 40px;
+    width: 500px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.gavril-left-story .gavril-text {
+    top: 100px;
+    left: 60px;
+    width: 400px;
+    height: 430px;
+}
+
+.gavril-left-story .gavril-sign {
+    right: 50px;
+    bottom: 35px;
+    width: 220px;
+}
+
+.gavril-left-story .gavril-stamp {
+    right: 50px;
+    bottom: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+/* hoja derecha historia */
+
+.gavril-right-story {
+    width: 520px;
+    height: 700px;
+    background: url("https://i.imgur.com/T7AhPTD.png") center/100% 100% no-repeat;
+}
+
+.gavril-right-story .gavril-title {
+    right: 110px;
+    top: 40px;
+    width: 400px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.gavril-right-story .gavril-text {
+    top: 100px;
+    left: 25px;
+    width: 395px;
+    height: 430px;
+}
+
+.gavril-right-story .gavril-sign {
+    right: 90px;
+    bottom: 35px;
+    width: 220px;
+}
+
+.gavril-right-story .gavril-stamp {
+    right: 100px;
+    bottom: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+/* hoja izquierda lecciones */
+
+.gavril-left-lessons {
+    width: 500px;
+    height: 700px;
+    background: url("https://i.imgur.com/5zetcc6.png") center/100% 100% no-repeat;
+}
+
+.gavril-left-lessons .gavril-title {
+    right: 10px;
+    top: 40px;
+    width: 440px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.gavril-left-lessons .gavril-text {
+    top: 100px;
+    left: 60px;
+    width: 400px;
+    height: 430px;
+}
+
+.gavril-left-lessons .gavril-note {
+    left: 55px;
+    bottom: 45px;
+    width: 270px;
+}
+
+.gavril-left-lessons .gavril-sign {
+    right: 50px;
+    bottom: 35px;
+    width: 220px;
+}
+
+.gavril-left-lessons .gavril-stamp {
+    right: 50px;
+    bottom: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+/* hoja derecha lecciones */
+
+.gavril-right-lessons {
+    width: 520px;
+    height: 700px;
+    background: url("https://i.imgur.com/T7AhPTD.png") center/100% 100% no-repeat;
+}
+
+.gavril-right-lessons .gavril-title {
+    left: 10px;
+    top: 40px;
+    width: 440px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.gavril-right-lessons .gavril-text {
+    top: 100px;
+    left: 25px;
+    width: 395px;
+    height: 430px;
+}
+
+.gavril-right-lessons .gavril-note {
+    left: 35px;
+    bottom: 45px;
+    width: 270px;
+}
+
+.gavril-right-lessons .gavril-sign {
+    right: 90px;
+    bottom: 35px;
+    width: 220px;
+}
+
+.gavril-right-lessons .gavril-stamp {
+    right: 100px;
+    bottom: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+/* hoja izquierda con imagen */
+
+.gavril-left-story-img {
+    width: 500px;
+    height: 700px;
+    background: url("https://i.imgur.com/5zetcc6.png") center/100% 100% no-repeat;
+}
+
+.gavril-left-story-img .gavril-title {
+    top: 40px;
+    width: 500px;
+    text-align: center;
+    font-size: 46px;
+}
+
+.gavril-left-story-img .gavril-halfimg {
+    top: 105px;
+    left: 60px;
+    width: 410px;
+    height: 250px;
+}
+
+.gavril-left-story-img .gavril-text {
+    top: 372px;
+    left: 60px;
+    width: 400px;
+    height: 160px;
+}
+
+.gavril-left-story-img .gavril-sign {
+    right: 50px;
+    bottom: 35px;
+    width: 220px;
+}
+
+.gavril-left-story-img .gavril-stamp {
+    right: 50px;
+    bottom: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+/* hoja derecha con imagen */
+
+.gavril-right-story-img {
+    width: 520px;
+    height: 700px;
+    background: url("https://i.imgur.com/T7AhPTD.png") center/100% 100% no-repeat;
+}
+
+.gavril-right-story-img .gavril-title {
+    right: 105px;
+    top: 40px;
+    width: 400px;
+    text-align: center;
+    font-size: 46px;
+}
+
+.gavril-right-story-img .gavril-halfimg {
+    top: 105px;
+    left: 30px;
+    width: 410px;
+    height: 250px;
+}
+
+.gavril-right-story-img .gavril-text {
+    top: 372px;
+    left: 25px;
+    width: 395px;
+    height: 160px;
+}
+
+.gavril-right-story-img .gavril-sign {
+    right: 90px;
+    bottom: 35px;
+    width: 220px;
+}
+
+.gavril-right-story-img .gavril-stamp {
+    right: 100px;
+    bottom: 20px;
+    width: 150px;
+    height: 150px;
+}
