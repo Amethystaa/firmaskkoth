@@ -70,10 +70,11 @@
 }
 .s-t{
   position:absolute;
-     top:210px;
+  top:210px;
   width:400px;
   text-align:center;
   text-transform:uppercase;
+  font-size: 10px;
   letter-spacing:1px;
   line-height:1.2
 }
