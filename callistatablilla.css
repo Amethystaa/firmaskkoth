@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "SingleGhost-regular";
+  src: url("https://dl.dropbox.com/scl/fi/z09tforavwu0uofiwtht5/SingleGhost-regular.ttf?rlkey=7xuk92qa4wzr3bkwmptbk64rk&st=22xucktw&dl=0") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Magnificent-Personal-Use";
+  src: url("https://dl.dropbox.com/scl/fi/tvlxq24ai960rh8t6f0t7/Magnificent-Personal-Use.ttf?rlkey=6nd879yoxpjsib3on4ix74s7g&st=rl8fc76b&dl=0") format("truetype");
+  font-display: swap;
+}
+
+.callista-post {
+  max-width: 490px;
+  margin: 0 auto;
+  padding: 22px;
+  box-sizing: border-box;
+  color: #d8d8d8;
+}
+
+.callista-head {
+  padding: 2px 0 10px;
+}
+
+.callista-title {
+  position: relative;
+  font-family: "SingleGhost-regular", serif;
+  font-size: 100px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: .5px;
+  margin: 0;
+  color: #2b2b2b;
+}
+
+.callista-title:after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  font: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  background: linear-gradient(to bottom, var(--groups) 0%, var(--groups) 35%, #2b2b2b 85%, #2b2b2b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100% 100%;
+  background-position: 0 100%;
+  animation: callistaGradientFlow 14s ease-in-out forwards;
+  pointer-events: none;
+}
+
+@keyframes callistaGradientFlow {
+  from {
+    background-position: 0 100%;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.callista-phrase {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 10px;
+  letter-spacing: 1.1px;
+  line-height: 1.5;
+  opacity: .5;
+  max-width: 370px;
+  margin: 12px auto 18px;
+  text-align: justify;
+  text-align-last: center;
+  text-transform: uppercase;
+}
+
+.callista-meta {
+  display: grid;
+  grid-template-columns: 1fr 12px 1fr;
+  align-items: center;
+  column-gap: 10px;
+  margin: 0 auto 10px;
+  max-width: 420px;
+}
+
+.callista-divider {
+  width: 2px;
+  height: 45px;
+  background: var(--groups);
+  opacity: .55;
+  justify-self: center;
+}
+
+.callista-with,
+.callista-wherewhen {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 15px;
+  letter-spacing: .35px;
+  line-height: 1.25;
+  overflow-wrap: break-word;
+}
+
+.callista-with {
+  text-align: right;
+}
+
+.callista-wherewhen {
+  text-align: left;
+  opacity: .85;
+}
+
+.callista-body {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 17.5px;
+  line-height: 1.55;
+  text-align: justify;
+  padding: 10px 6px 6px;
+}
+
+.callista-drop {
+  float: left;
+  font-family: "Magnificent-Personal-Use", serif;
+  font-size: 52px;
+  line-height: 1.99;
+  margin: 1px 32px 0 0;
+  color: var(--groups);
+}
+
+.callista-orn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.callista-line {
+  flex: 1;
+  height: 2px;
+  background: var(--groups);
+  opacity: .25;
+}
+
+.callista-icon {
+  font-size: 56px;
+  line-height: 1;
+  display: inline-block;
+  background: radial-gradient(circle at 50% 50%, var(--groups) 0%, var(--groups) 30%, #2b2b2b 65%, #2b2b2b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
