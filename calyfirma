@@ -1,0 +1,8 @@
+.firma-doble-gif{width:500px;height:210px;display:grid;grid-template-columns:1fr 1fr;position:relative}
+.firma-doble-gif .firma-gif{position:relative;overflow:hidden}
+.firma-doble-gif .firma-gif img{width:100%;height:100%;object-fit:cover;display:block}
+.firma-doble-gif .firma-centro{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:5}
+.firma-doble-gif .firma-centro .game-icon{font-size:60px;background:linear-gradient(180deg,#9d97a6,#4c7264);-webkit-background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 3px rgba(0,0,0,.45))}
+.firma-doble-gif .firma-texto-corner{position:absolute;top:135px;right:14px;display:flex;gap:8px;align-items:flex-start;text-align:left!important}
+.firma-doble-gif .firma-linea{width:1px;height:34px;background:#4c7264}
+.firma-doble-gif .firma-texto{font:8px Arial,sans-serif;text-transform:uppercase;letter-spacing:2px;color:#ddd;max-width:150px;text-align:left!important}
