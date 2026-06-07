@@ -1,0 +1,82 @@
+/*
+
+       _ __ ___  ___ ___   _ __ ___  ___  ___  _   _ _ __ ___ ___  ___ 
+      | '__/ _ \/ __/ __| | '__/ _ \/ __|/ _ \| | | | '__/ __/ _ \/ __|
+      | | | (_) \__ \__ \ | | |  __/\__ \ (_) | |_| | | | (_|  __/\__ \
+      |_|  \___/|___/___/ |_|  \___||___/\___/ \__,_|_|  \___\___||___/
+
+
+                      https://rossresources.tumblr.com/
+   
+                    CRIADO POR ROSS, NÃO TIRE OS CRÉDITOS
+
+                                *:･ﾟ✧*:･ﾟ✧
+
+                   CREATED BY ROSS DON'T REMOVE MY CREDITS
+          
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap');
+
+#rcherryontop {
+  --width: 330px;
+  --image-size: 70px;
+  --outer-spacing: 20px;
+  --border-color: #ababab;
+  --title-color: #ffffff;
+  --title-sub-color: #18cf8b;
+  --text-color: #fff;
+  margin: 30px 0;
+}
+
+#rcherryontop .rcontainer {
+  width: var(--width);
+  background: url(https://i.pinimg.com/564x/20/67/8b/20678b178cd9f210fdce25b05f070f27.jpg) center/cover;
+  position: relative;
+  padding: 15px;
+}
+
+#rcherryontop .rborder {
+  height: 100%;
+  border: 1px solid var(--border-color);
+}
+
+#rcherryontop .rheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  backdrop-filter: blur(3px) grayscale(1);
+}
+
+#rcherryontop a[href="https://is.gd/rossr"] {
+  display: block;
+  width: var(--image-size);
+  height: var(--image-size);
+}
+
+#rcherryontop a[href="https://is.gd/rossr"] img {
+  width: var(--image-size);
+  height: var(--image-size);
+  object-fit: cover;
+  padding-right: 10px;
+  border-right: 1px solid var(--border-color);
+}
+
+#rcherryontop a[href="https://is.gd/rossr"] ~ div {
+  margin: 0 25px;
+  border-bottom: 7px solid var(--title-sub-color);
+  color: var(--title-color);
+  font: 25px/100% 'Anton', sans-serif;
+  text-transform: lowercase;
+}
+
+#rcherryontop a[href="https://is.gd/rossr"] ~ span {
+  padding: 0 15px 0 0;
+  color: var(--text-color);
+  font: bold 8px/100% 'Poppins', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: justify;
+  text-align-last: justify;
+}
