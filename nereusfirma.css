@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Quetine";
+  src: url("https://cdn.jsdelivr.net/gh/Amethystaa/Izanamicodes@516542c4083a2208aec7bb19507a587dd90a2e4d/Quetine.ttf") format("truetype");
+}
+
 #nereus .firma-wrap {
   width: 500px;
   display: flex;
