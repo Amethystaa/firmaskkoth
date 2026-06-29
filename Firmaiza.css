@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Quetine";
+  src: url("https://cdn.jsdelivr.net/gh/Amethystaa/Izanamicodes@516542c4083a2208aec7bb19507a587dd90a2e4d/Quetine.ttf") format("truetype");
+}
+
 .firma-wrap{width:500px;display:flex;flex-direction:column;align-items:center;position:relative}
 .firma-titulo{width:500px;font-family:'Quetine',cursive;font-size:34px;line-height:1;text-align:center;margin-bottom:-8px;position:relative;z-index:3;pointer-events:none}
 .firma-imgs{width:500px;height:200px;display:flex;overflow:hidden;position:relative}.col{height:200px;background-size:cover;background-position:center;background-repeat:no-repeat;transition:.55s}
